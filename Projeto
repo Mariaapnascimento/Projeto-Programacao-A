@@ -1,0 +1,14 @@
+novoCliente = input("Nome do Cliente: ")
+novaConta = int(input("Número da conta: "))
+saldo = float(input("Saldo: R$ "))
+deposito = float(input("Valor do deposito: R$ "))
+saque = float(input("Valor do saque: R$ "))
+
+print("####################################")
+
+if deposito > 0:
+    print(f" Nome: {novoCliente}\n Conta: {novaConta}\n Saldo: R$ {saldo+deposito} ")
+elif saque > 0:
+    print(f" Nome: {novoCliente}\n Conta: {novaConta}\n Saldo: R$ {saldo-saque}")
+else:
+    print(f" Nome: {novoCliente}\n Conta: {novaConta}\n Saldo: R$ {saldo} ")
