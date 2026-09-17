@@ -20,7 +20,7 @@ while True:
     menu =  input('Digite sua opção:\n')
 
     if menu!= '1' and menu != '2':
-        print('opção inválida!')
+        print('OPÇÃO INVÁLIDA!')
     elif menu =='2':
         print('OBRIGADO PELA PREFERENCIA!')
         break
@@ -72,24 +72,48 @@ while True:
                 print(f"NUMERO DE CONTA: {login_inserir} - CLIENTE: {nome_cliente}")
 
 
-#                saldo = float(input("Saldo atual: R$ "))
+       #         saldo = float(input("Saldo atual: R$ "))
+                saldo = float(dados_clientes[login_inserir][2]) 
                 deposito = float(input("Valor do deposito: R$ "))
                 saque = float(input("Valor do saque: R$ "))
 
 
-                    if saque <= (saldo + deposito):
-                        saldo_finl = saldo + deposito - saque
-                        print("\n####################################\n")
-                        print(f" Nome: {nome_cliente}\n Conta: {login_inserir}\n Saldo Final: R$ {saldo_final:.2f}")
-                    else:
-                        print("\n####################################\n")
-                        print("ERRO: Saldo insuficiente para realizar o saque!")
-                        print(f"Saldo disponível para saque: R$ {saldo + deposito:.2f}")
-                    
-                    print('='*30)
-                    break
-                else:
-                    print("LOGIN OU SENHA INCORRETOS!")
-                        
+                if saque <= (saldo + deposito):
+                    saldo_final = saldo + deposito - saque
 
+                    dados_cliente: [nome_cliente, senha_cliente, str(saldo_final)]
+
+
+                    print("\n####################################\n")
+                    print(f" Nome: {nome_cliente}\n Conta: {login_inserir}\n Saldo Final: R$ {saldo_final:.2f}")
+                else:
+                    print("\n####################################\n")
+                    print("ERRO: Saldo insuficiente para realizar o saque!")
+                    print(f"Saldo disponível para saque: R$ {saldo + deposito:.2f}")
+                    
+                print('='*30)
+                input("Pressione ENTER para retornar ao menu...")
+
+            else:
+                print("LOGIN OU SENHA INCORRETOS!")
+                input("Pressione ENTER para retornar ao menu...")
+
+        elif opcao == 3:
+            print(f'{'-'*30}\n{"  LISTAR CONTAS  ":^30}\n{'-'*30}')
+
+            for conta in dados_clientes:
+                print(f'Conta: {conta} - Cliente: {dados_clientes[conta][0]} - Saldo: R$ {float(dados_clientes[conta][2]):.2f}')
+            input("Pressione ENTER para retornar ao menu...")
+
+
+        elif opcao == 4:
+            print(f'{'-'*30}\n{"  PROCURAR CONTA  ":^30}\n{'-'*30}')
+
+            for contas in dados_clientes:
+                conta = input("Digite a conta desejada:\n")
+                print(f"Conta: {conta} - Cliente: {dados_clientes[conta][0]} - Saldo: R$ {float(dados_clientes[conta][2]):.2f}")
+                print("\n####################################\n")
                 break
+        else:
+            print('OPÇÃO INVÁLIDA!')
+            input("Pressione ENTER para retornar ao menu...")
