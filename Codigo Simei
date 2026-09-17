@@ -1,0 +1,95 @@
+# BANCO PROGRAMAÇÃO A
+print(f'{"="*30}')
+print(f'{"="*30}\n{"#  BANCO MASTER  #":^30}\n{"="*30}')
+print(f'{"="*30}')
+print('Bem vindo ao Banco Master,\n'
+      'o banco que mais cresce no \n'
+      'Brasil! ')
+
+# LISTAS DOS CLIENTES NO BANCO
+# Dicionario para armazenar dados do cliente
+# Login, senha, nome e saldo
+dados_clientes = {
+    "Login 1": ['Cliente 1', '123', '1000'],
+    "Login 2": ['Cliente 2', '567', '2000'],
+}
+
+while True:
+    print(f'Deseja acessar o Menu?\n'
+          'Digite  1 (para Sim) ou 2 (para Não)')
+    menu =  input('Digite sua opção:\n')
+
+    if menu!= '1' and menu != '2':
+        print('opção inválida!')
+    elif menu =='2':
+        print('OBRIGADO PELA PREFERENCIA!')
+        break
+    else:
+        print(f'{"-"*30}\n{"  MENU CLIENTE ":^30}\n{"-"*30}')
+        print("""
+        1 - Abertura de conta
+        2 - Login
+        3 - Listar contas
+        4 - Procurar conta
+        """)
+        opcao = int(input("DIGITE A OPÇÃO DESEJADA:\n"))
+
+
+        # ------------------------------------------------------------------
+        # OPÇÃO 1: ABERTURA DE CONTA
+        # ------------------------------------------------------------------
+        if opcao == 1:
+            print(f'{"-"*30}\n{"  ABERTURA DE CONTA ":^30}\n{"-"*30}')
+
+
+            cadastro_nome = input("DIGITE SEU NOME COMPLETO:\n")
+            cadastro_login = input("DIGITE SEU NUMERO DE CONTA:\n")
+            cadastro_senha = input("DIGITE SUA SENHA:\n")
+            cadastro_saldo = input("DIGITE SEU SALDO INICIAL:\n R$ ")
+
+   #         dados_clientes[cadastro_login] = [cadastro_nome, cadastro_senha, cadastro_saldo]            
+            dados_clientes.update({cadastro_login: [cadastro_nome, cadastro_senha, cadastro_saldo]})
+
+
+            print('\n______________PARABENS!________________\n'
+                  '___________CADASTRO CONCLUIDO!___________')
+            print("VOCÊ SERÁ REDIRECIONADO PARA O MENU DE OPÇÕES")
+            input("Pressione ENTER para retornar ao menu...")
+
+        # ------------------------------------------------------------------
+        # OPÇÃO 2: LOGIN
+        # ------------------------------------------------------------------
+        elif opcao == 2:
+            print(f'{"-"*30}\n{"  LOGIN ":^30}\n{"-"*30}')
+            login_inserir = input("INSERIR NUMERO DE CONTA\n")
+            login_senha = input("INSERIR SENHA\n")
+                              
+            if login_inserir in dados_clientes and dados_clientes[login_inserir][1] == login_senha:
+                nome_cliente = dados_clientes[login_inserir][0]
+                    
+                print("\nLOGIN REALIZADO COM SUCESSO\nACESSO LIBERADO")
+                print(f'{"="*30}\n{"CONTA":^30}\n{"="*30}')
+                print(f"NUMERO DE CONTA: {login_inserir} - CLIENTE: {nome_cliente}")
+
+
+#                saldo = float(input("Saldo atual: R$ "))
+                deposito = float(input("Valor do deposito: R$ "))
+                saque = float(input("Valor do saque: R$ "))
+
+
+                    if saque <= (saldo + deposito):
+                        saldo_finl = saldo + deposito - saque
+                        print("\n####################################\n")
+                        print(f" Nome: {nome_cliente}\n Conta: {login_inserir}\n Saldo Final: R$ {saldo_final:.2f}")
+                    else:
+                        print("\n####################################\n")
+                        print("ERRO: Saldo insuficiente para realizar o saque!")
+                        print(f"Saldo disponível para saque: R$ {saldo + deposito:.2f}")
+                    
+                    print('='*30)
+                    break
+                else:
+                    print("LOGIN OU SENHA INCORRETOS!")
+                        
+
+                break
