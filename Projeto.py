@@ -34,7 +34,7 @@ while True:     # para o menu continuar aparecendo
             print("Cliente não encontrado.")
 
     elif opcao == "3":                                      #listar contas
-        if len(contas) == 0:                                #verifica se a quantidade de elementos dentro da lista
+        if len(contas) == 0:                                #verifica a quantidade de elementos dentro da lista
             print("Nenhuma conta cadastrada.")              # se len = 0
         else:
             print("\n### CONTAS CADASTRADAS ###")
