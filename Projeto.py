@@ -25,7 +25,7 @@ while True:     # para o menu continuar aparecendo
         if nome in nomes:                                      #Verifica se o nome está na lista
             conta = int(input("Digite o número da conta: "))   #Digite a conta
             if conta not in contas:                            #verifica se a conta está na lista
-                contas.append(conta)                           #se não estiver adiciona a conta na lista
+                contas.append(conta)                           #se não estiver, adiciona a conta na lista
                 saldos.append(0)                               #adiciona um saldo inicial na lista
                 print("Conta cadastrada com sucesso!")
             else:
@@ -90,7 +90,7 @@ while True:     # para o menu continuar aparecendo
         else:
             print("Conta não encontrada.")
 
-    elif opcao == "0":                         #Voltar
+    elif opcao == "0":                         #sair
         print("Programa encerrado.")
         break                                  #sai do while
     else:
