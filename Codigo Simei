@@ -46,8 +46,7 @@ while True:
             cadastro_login = input("DIGITE SEU NUMERO DE CONTA:\n")
             cadastro_senha = input("DIGITE SUA SENHA:\n")
             cadastro_saldo = input("DIGITE SEU SALDO INICIAL:\n R$ ")
-
-   #         dados_clientes[cadastro_login] = [cadastro_nome, cadastro_senha, cadastro_saldo]            
+        
             dados_clientes.update({cadastro_login: [cadastro_nome, cadastro_senha, cadastro_saldo]})
 
 
