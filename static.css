@@ -7,7 +7,7 @@ style.css
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffc0cb;
+    background-color: #f5b6c6;
     color: #222;
     min-height: 100vh;
 }
@@ -21,7 +21,7 @@ body {
 
 /* Cabeçalho */
 .cabecalho {
-    background-color: #f7b0dc;
+    background-color: #faecf3;
     padding: 30px;
     text-align: center;
     border-radius: 15px 15px 0 0;
@@ -29,7 +29,7 @@ body {
 }
 
 .cabecalho h1 {
-    color: #d81b60;
+    color: #f52b75;
     font-size: 36px;
     margin-bottom: 10px;
 }
@@ -41,7 +41,7 @@ body {
 
 /* Área dos botões */
 .card {
-    background-color: #f3bad7;
+    background-color: #faecf3;
     padding: 35px;
     border-radius: 0 0 15px 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
@@ -139,9 +139,9 @@ body {
 
 /* Mensagens */
 .mensagem {
-    background-color: #fce4ec;
+    background-color: #f58eaf;
 
-    border: 2px solid #f48fb1;
+    border: 2px solid #f1bcce;
 
     padding: 15px;
 
