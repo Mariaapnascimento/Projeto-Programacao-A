@@ -1,0 +1,44 @@
+index.html
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Banco</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="cabecalho">
+            <h1> PROJETO BANCO</h1>
+            <p>Sistema de gerenciamento bancário</p>
+        </div>
+        <div class="card">
+            <div class="menu">
+                <a class="botao" href="/cadastrar-cliente">
+                    Cadastrar Cliente
+                </a>
+                <a class="botao" href="/cadastrar-conta">
+                    Cadastrar Conta
+                </a>
+                <a class="botao" href="/listar-contas">
+                    Listar Contas
+                </a>
+                <a class="botao" href="/procurar-conta">
+                    Procurar Conta
+                </a>
+                <a class="botao" href="/consultar-saldo">
+                    Consultar Saldo
+                </a>
+                <a class="botao" href="/depositar">
+                    Depositar
+                </a>
+                <a class="botao" href="/sacar">
+                    Sacar
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
