@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Patrimônio da Agência</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="cabecalho">
+            <h1>PATRIMÔNIO DA AGÊNCIA</h1>
+            <p>Valor total disponível nas contas</p>
+        </div>
+        <div class="card">
+            <h2>Patrimônio Total</h2>
+            <p>
+                R$ {{ "%.2f"|format(total) }}
+            </p>
+            <br>
+            <a href="/">Voltar ao menu</a>
+        </div>
+    </div>
+
+</body>
+</html>
