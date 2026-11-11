@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Histórico de Transações</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="cabecalho">
+            <h1>HISTÓRICO DE TRANSAÇÕES</h1>
+            <p>Consulte as movimentações da conta</p>
+        </div>
+        <div class="card">
+            <form method="POST">
+                <label>Número da conta:</label>
+                <input type="number" name="numero" required>
+                <br><br>
+                <button type="submit">Consultar Histórico</button>
+            </form>
+            {% if mensagem %}
+                <p>{{ mensagem }}</p>
+            {% endif %}
+            {% if conta %}
+                <h2>Dados da Conta</h2>
+                <p>Cliente: {{ conta.cliente.nome }}</p>
+                <p>Número: {{ conta.numero }}</p>
+                <p>Tipo: {{ conta.tipo }}</p>
+                <h2>Transações</h2>
+                {% if transacoes %}
+                    {% for transacao in transacoes %}
+                        <p>{{ transacao }}</p>
+                    {% endfor %}
+                {% else %}
+                    <p>Nenhuma transação realizada.</p>
+                {% endif %}
+            {% endif %}
+            <br>
+            <a href="/">Voltar ao menu</a>
+        </div>
+    </div>
+
+</body>
+</html>
