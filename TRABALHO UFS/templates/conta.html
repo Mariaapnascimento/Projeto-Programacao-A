@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block conteudo %}
+
+<div class="card destaque">
+  <h3>Conta {{ conta.numero }} · {{ conta.tipo }}</h3>
+  <p>Cliente: {{ conta.cliente.nome }}</p>
+  <div class="valor">R$ {{ "%.2f"|format(conta.saldo) }}</div>
+</div>
+
+<div class="card">
+  <h3>Depositar</h3>
+  <form method="post" action="{{ url_for('operar', numero=conta.numero, operacao='depositar') }}">
+    <input name="valor" type="number" step="0.01" placeholder="Valor" required>
+    <button>Depositar</button>
+  </form>
+</div>
+
+<div class="card">
+  <h3>Sacar</h3>
+  <form method="post" action="{{ url_for('operar', numero=conta.numero, operacao='sacar') }}">
+    <input name="valor" type="number" step="0.01" placeholder="Valor" required>
+    <button>Sacar</button>
+  </form>
+</div>
+
+<div class="card">
+  <h3>Transferir</h3>
+  <form method="post" action="{{ url_for('operar', numero=conta.numero, operacao='transferir') }}">
+    <select name="destino">
+      {% for c in agencia.contas if c.numero != conta.numero %}
+        <option value="{{ c.numero }}">{{ c.numero }} - {{ c.cliente.nome }}</option>
+      {% endfor %}
+    </select>
+    <input name="valor" type="number" step="0.01" placeholder="Valor" required>
+    <button>Transferir</button>
+  </form>
+</div>
+
+<div class="card">
+  <h3>Histórico</h3>
+  <ul class="historico">
+    {% for t in conta.historico_transacoes %}
+      <li>{{ t }}</li>
+    {% else %}
+      <li>Nenhuma transação realizada.</li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% endblock %}
