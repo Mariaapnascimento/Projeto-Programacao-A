@@ -1,4 +1,8 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request # importando ferramentas do Flask
+# Flask - permite criar aplicação na web
+# render_template - abre arquivos HTML
+# request - pega os dados enviados pelo formulário
+
 from agencia import Agencia
 from banco import Banco
 
