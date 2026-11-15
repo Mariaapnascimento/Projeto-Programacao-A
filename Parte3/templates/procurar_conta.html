@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Procurar Conta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Procurar Conta</h1>
+    <form method="POST">
+        <label>Número da conta:</label>
+        <input type="number" name="numero" required>
+        <button type="submit">
+            Procurar
+        </button>
+    </form>
+    {% if conta %}
+        <h2>Conta encontrada</h2>
+        <p>
+            Cliente: {{ conta.nome }}
+        </p>
+        <p>
+            Conta: {{ conta.numero }}
+        </p>
+        <p>
+            Saldo: R$ {{ "%.2f"|format(conta.saldo) }}
+        </p>
+    {% endif %}
+    <br>
+    <a href="/">Voltar ao menu</a>
+
+</body>
+</html>
