@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Cliente</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Cadastrar Cliente</h1>
+    <form method="POST">
+        <label>Nome:</label>
+        <input type="text" name="nome" required>
+        <button type="submit">
+            Cadastrar
+        </button>
+    </form>
+    <br>
+    <a href="/">Voltar ao menu</a>
+
+</body>
+</html>
