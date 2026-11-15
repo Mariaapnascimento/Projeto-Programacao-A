@@ -242,5 +242,22 @@ def aplicar_rendimento():
             mensagem = "Não foi possível aplicar o rendimento."
     return render_template("aplicar_rendimento.html", mensagem=mensagem)
 
+@app.route("/historico-saldo", methods=["GET", "POST"])
+def historico_saldo():
+    historico = []
+    mensagem = ""
+    if request.method == "POST":
+        numero = int(request.form["numero"])
+        conta = banco.procurar_conta(numero)
+        if conta is None:
+            mensagem = "Conta não encontrada."
+        else:
+            historico = conta.exibirHistoricoSaldo()
+    return render_template(
+        "historico_saldo.html",
+        historico=historico,
+        mensagem=mensagem
+    )
+
 if __name__ == "__main__":
     app.run(debug=True)
