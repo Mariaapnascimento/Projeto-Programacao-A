@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Conta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Cadastrar Conta</h1>
+    <form method="POST">
+        <label>Nome do cliente:</label>
+        <input type="text" name="nome" required>
+        <br><br>
+        <label>Número da conta:</label>
+        <input type="number" name="numero" required>
+        <br><br>
+        <button type="submit">
+            Cadastrar Conta
+        </button>
+    </form>
+    <br>
+    <a href="/">Voltar ao menu</a>
+
+</body>
+</html>
