@@ -1,0 +1,30 @@
+html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gráficos - Projeto Banco</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Gráficos Bancários</h1>
+        <h2>Distribuição de Contas por Tipo</h2>
+        <div>
+            {{ grafico_pizza | safe }}
+        </div>
+        <h2>Média Salarial</h2>
+        <div>
+            {{ grafico_barras | safe }}
+        </div>
+        <h2>Evolução do Saldo</h2>
+        <div>
+            {{ grafico_linhas | safe }}
+        </div>
+        <a href="/">Voltar ao início</a>
+    </div>
+
+</body>
+</html>
+
+

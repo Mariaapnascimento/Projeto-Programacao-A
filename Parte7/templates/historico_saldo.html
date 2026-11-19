@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Histórico de Saldo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Histórico de Saldo</h1>
+    <form method="POST">
+        <label>Número da conta:</label>
+        <input type="number" name="numero" required>
+        <br><br>
+        <button type="submit">Consultar Histórico</button>
+    </form>
+    {% if mensagem %}
+        <p>{{ mensagem }}</p>
+    {% endif %}
+    {% if historico %}
+        <h2>Movimentações do saldo</h2>
+        {% for saldo in historico %}
+            <p>R$ {{ "%.2f"|format(saldo) }}</p>
+        {% endfor %}
+    {% endif %}
+    <br>
+    <a href="/">Voltar ao menu</a>
+</body>
+</html>

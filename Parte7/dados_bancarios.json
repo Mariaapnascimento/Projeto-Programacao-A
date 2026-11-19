@@ -1,0 +1,256 @@
+[
+    {
+        "nome": "Agência Central",
+        "numero": "003",
+        "clientes": [
+            {
+                "nome": "Maria",
+                "cpf": "1",
+                "salario": 1.0,
+                "telefone": "1",
+                "contas": [
+                    {
+                        "numero": 3,
+                        "tipo": "Corrente",
+                        "saldo": 110.0,
+                        "historico_saldos": [
+                            0.0,
+                            100.0,
+                            110.0
+                        ],
+                        "transacoes": [
+                            {
+                                "tipo": "DEPOSITO",
+                                "valor": 100.0,
+                                "data": "2026-11-18T19:05:16.465347"
+                            },
+                            {
+                                "tipo": "TRANSFERENCIA_RECEBIDA",
+                                "valor": 10.0,
+                                "data": "2026-11-18T20:21:40.144528"
+                            }
+                        ],
+                        "taxaManutencao": 5.0
+                    }
+                ]
+            },
+            {
+                "nome": "Jaine",
+                "cpf": "2",
+                "salario": 2.0,
+                "telefone": "2",
+                "contas": [
+                    {
+                        "numero": 2,
+                        "tipo": "Poupança",
+                        "saldo": 89.0,
+                        "historico_saldos": [
+                            0.0,
+                            100.0,
+                            89.0
+                        ],
+                        "transacoes": [
+                            {
+                                "tipo": "DEPOSITO",
+                                "valor": 100.0,
+                                "data": "2026-11-18T19:05:10.323198"
+                            },
+                            {
+                                "tipo": "SAQUE",
+                                "valor": 11.0,
+                                "data": "2026-11-18T20:21:20.213798"
+                            }
+                        ],
+                        "taxaRendimento": 3.0
+                    }
+                ]
+            },
+            {
+                "nome": "Joana",
+                "cpf": "3",
+                "salario": 3.0,
+                "telefone": "3",
+                "contas": [
+                    {
+                        "numero": 1,
+                        "tipo": "Corrente",
+                        "saldo": 100.0,
+                        "historico_saldos": [
+                            0.0,
+                            100.0
+                        ],
+                        "transacoes": [
+                            {
+                                "tipo": "DEPOSITO",
+                                "valor": 100.0,
+                                "data": "2026-11-18T19:05:02.667951"
+                            }
+                        ],
+                        "taxaManutencao": 10.0
+                    }
+                ]
+            },
+            {
+                "nome": "Elenice",
+                "cpf": "5",
+                "salario": 5.0,
+                "telefone": "5",
+                "contas": [
+                    {
+                        "numero": 4,
+                        "tipo": "Poupança",
+                        "saldo": 929.0,
+                        "historico_saldos": [
+                            0.0,
+                            1000.0,
+                            949.0,
+                            939.0,
+                            929.0
+                        ],
+                        "transacoes": [
+                            {
+                                "tipo": "DEPOSITO",
+                                "valor": 1000.0,
+                                "data": "2026-11-18T20:02:03.045028"
+                            },
+                            {
+                                "tipo": "SAQUE",
+                                "valor": 51.0,
+                                "data": "2026-11-18T20:21:02.018468"
+                            },
+                            {
+                                "tipo": "TRANSFERENCIA_ENVIADA",
+                                "valor": 10.0,
+                                "data": "2026-11-18T20:21:40.144522"
+                            },
+                            {
+                                "tipo": "TRANSFERENCIA_ENVIADA",
+                                "valor": 10.0,
+                                "data": "2026-11-19T02:01:11.875498"
+                            }
+                        ],
+                        "taxaRendimento": 5.0
+                    }
+                ]
+            },
+            {
+                "nome": "Gabriel",
+                "cpf": "7",
+                "salario": 7.0,
+                "telefone": "7",
+                "contas": [
+                    {
+                        "numero": 5,
+                        "tipo": "Poupança",
+                        "saldo": 500.0,
+                        "historico_saldos": [
+                            0.0,
+                            500.0
+                        ],
+                        "transacoes": [
+                            {
+                                "tipo": "DEPOSITO",
+                                "valor": 500.0,
+                                "data": "2026-11-18T20:20:27.227839"
+                            }
+                        ],
+                        "taxaRendimento": 2.0
+                    }
+                ]
+            },
+            {
+                "nome": "Luan",
+                "cpf": "7",
+                "salario": 2.0,
+                "telefone": "2",
+                "contas": [
+                    {
+                        "numero": 6,
+                        "tipo": "Poupança",
+                        "saldo": 395.0,
+                        "historico_saldos": [
+                            0.0,
+                            425.0,
+                            395.0
+                        ],
+                        "transacoes": [
+                            {
+                                "tipo": "DEPOSITO",
+                                "valor": 425.0,
+                                "data": "2026-11-18T20:20:37.876675"
+                            },
+                            {
+                                "tipo": "SAQUE",
+                                "valor": 30.0,
+                                "data": "2026-11-18T20:21:10.813167"
+                            }
+                        ],
+                        "taxaRendimento": 3.0
+                    }
+                ]
+            },
+            {
+                "nome": "GD",
+                "cpf": "10",
+                "salario": 1000.0,
+                "telefone": "7",
+                "contas": [
+                    {
+                        "numero": 10,
+                        "tipo": "Corrente",
+                        "saldo": 500.0,
+                        "historico_saldos": [
+                            0.0,
+                            500.0
+                        ],
+                        "transacoes": [
+                            {
+                                "tipo": "DEPOSITO",
+                                "valor": 500.0,
+                                "data": "2026-11-19T00:51:24.723071"
+                            }
+                        ],
+                        "taxaManutencao": 9.0
+                    }
+                ]
+            },
+            {
+                "nome": "Maria Aparecida",
+                "cpf": "003",
+                "salario": 1500.0,
+                "telefone": "8",
+                "contas": [
+                    {
+                        "numero": 1001,
+                        "tipo": "Corrente",
+                        "saldo": 261.0,
+                        "historico_saldos": [
+                            0.0,
+                            256.0,
+                            251.0,
+                            261.0
+                        ],
+                        "transacoes": [
+                            {
+                                "tipo": "DEPOSITO",
+                                "valor": 256.0,
+                                "data": "2026-11-19T02:00:19.108706"
+                            },
+                            {
+                                "tipo": "SAQUE",
+                                "valor": 5.0,
+                                "data": "2026-11-19T02:00:30.101484"
+                            },
+                            {
+                                "tipo": "TRANSFERENCIA_RECEBIDA",
+                                "valor": 10.0,
+                                "data": "2026-11-19T02:01:11.875506"
+                            }
+                        ],
+                        "taxaManutencao": 4.0
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Patrimônio do Cliente</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Patrimônio do Cliente</h1>
+        <h2>{{ cliente.nome }}</h2>
+        <div>
+            {{ grafico_pizza | safe }}
+        </div>
+        <h2>Depósitos e Saques por Mês</h2>
+    <div>
+        {{ grafico_barras | safe }}
+    </div>
+    <h2>Evolução do Saldo e das Transações</h2>
+    <div>
+        {{ grafico_linhas | safe }}
+    </div>
+        <a href="/">Voltar ao menu</a>
+    </div>
+</body>
+</html>
+
