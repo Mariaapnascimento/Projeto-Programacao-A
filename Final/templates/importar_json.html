@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Importar Dados JSON</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Importar Dados JSON</h1>
+        <p>Selecione o arquivo JSON para importar os dados bancários.</p>
+        <form action="/importar-json" method="POST" enctype="multipart/form-data">
+
+            <input type="file" name="arquivo" accept=".json" required>
+            <button type="submit" class="botao">Importar Dados</button>
+
+        </form>
+        <br>
+        <a href="/" class="botao">Voltar</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Descontar Taxa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Descontar Taxa de Manutenção</h1>
+    <form method="POST">
+        <label>Número da conta corrente:</label>
+        <input type="number" name="numero" required>
+        <br><br>
+        <button type="submit">Descontar Taxa</button>
+    </form>
+    {% if mensagem %}
+        <p>{{ mensagem }}</p>
+    {% endif %}
+    <br>
+    <a href="/">Voltar ao menu</a>
+</body>
+</html>

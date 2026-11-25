@@ -1,0 +1,202 @@
+[
+    {
+        "nome": "Agência Central",
+        "numero": "003",
+        "clientes": [
+            {
+                "nome": "Maria",
+                "cpf": "1",
+                "salario": 100.0,
+                "telefone": "1",
+                "contas": [
+                    {
+                        "numero": 1,
+                        "tipo": "Corrente",
+                        "saldo": 175.0,
+                        "historico_saldos": [
+                            0.0,
+                            200.0,
+                            195.0,
+                            175.0
+                        ],
+                        "transacoes": [
+                            {
+                                "tipo": "DEPOSITO",
+                                "valor": 200.0,
+                                "data": "2026-11-24T22:22:53.512812"
+                            },
+                            {
+                                "tipo": "TAXA_MANUTENCAO",
+                                "valor": 5.0,
+                                "data": "2026-11-24T22:22:53.771575"
+                            },
+                            {
+                                "tipo": "SAQUE",
+                                "valor": 20.0,
+                                "data": "2026-11-25T17:58:17.260086"
+                            }
+                        ],
+                        "ultimo_desconto": "2026-11-24T22:22:53.771575",
+                        "ultimo_rendimento": null,
+                        "taxaManutencao": 5.0
+                    },
+                    {
+                        "numero": 1001,
+                        "tipo": "Poupança",
+                        "saldo": 53.0,
+                        "historico_saldos": [
+                            0.0,
+                            0.0,
+                            53.0
+                        ],
+                        "transacoes": [
+                            {
+                                "tipo": "RENDIMENTO",
+                                "valor": 0.0,
+                                "data": "2026-11-24T22:22:08.152527"
+                            },
+                            {
+                                "tipo": "DEPOSITO",
+                                "valor": 53.0,
+                                "data": "2026-11-24T22:23:33.702209"
+                            }
+                        ],
+                        "ultimo_desconto": null,
+                        "ultimo_rendimento": "2026-11-24T22:22:08.152527",
+                        "taxaRendimento": 5.0
+                    }
+                ]
+            },
+            {
+                "nome": "Elenice",
+                "cpf": "2",
+                "salario": 100.0,
+                "telefone": "2",
+                "contas": [
+                    {
+                        "numero": 2,
+                        "tipo": "Poupança",
+                        "saldo": 300.0,
+                        "historico_saldos": [
+                            0.0,
+                            0.0,
+                            300.0
+                        ],
+                        "transacoes": [
+                            {
+                                "tipo": "RENDIMENTO",
+                                "valor": 0.0,
+                                "data": "2026-11-24T22:22:18.965705"
+                            },
+                            {
+                                "tipo": "DEPOSITO",
+                                "valor": 300.0,
+                                "data": "2026-11-24T22:22:58.785198"
+                            }
+                        ],
+                        "ultimo_desconto": null,
+                        "ultimo_rendimento": "2026-11-24T22:22:18.965705",
+                        "taxaRendimento": 5.0
+                    }
+                ]
+            },
+            {
+                "nome": "Joana",
+                "cpf": "3",
+                "salario": 100.0,
+                "telefone": "3",
+                "contas": [
+                    {
+                        "numero": 3,
+                        "tipo": "Poupança",
+                        "saldo": 150.0,
+                        "historico_saldos": [
+                            0.0,
+                            0.0,
+                            150.0
+                        ],
+                        "transacoes": [
+                            {
+                                "tipo": "RENDIMENTO",
+                                "valor": 0.0,
+                                "data": "2026-11-24T22:22:38.474210"
+                            },
+                            {
+                                "tipo": "DEPOSITO",
+                                "valor": 150.0,
+                                "data": "2026-11-24T22:23:05.026063"
+                            }
+                        ],
+                        "ultimo_desconto": null,
+                        "ultimo_rendimento": "2026-11-24T22:22:38.474210",
+                        "taxaRendimento": 5.0
+                    }
+                ]
+            },
+            {
+                "nome": "Jaine",
+                "cpf": "4",
+                "salario": 100.0,
+                "telefone": "4",
+                "contas": [
+                    {
+                        "numero": 4,
+                        "tipo": "Corrente",
+                        "saldo": 293.0,
+                        "historico_saldos": [
+                            0.0,
+                            298.0,
+                            293.0
+                        ],
+                        "transacoes": [
+                            {
+                                "tipo": "DEPOSITO",
+                                "valor": 298.0,
+                                "data": "2026-11-24T22:23:13.064470"
+                            },
+                            {
+                                "tipo": "TAXA_MANUTENCAO",
+                                "valor": 5.0,
+                                "data": "2026-11-24T22:23:13.432503"
+                            }
+                        ],
+                        "ultimo_desconto": "2026-11-24T22:23:13.432503",
+                        "ultimo_rendimento": null,
+                        "taxaManutencao": 5.0
+                    },
+                    {
+                        "numero": 1004,
+                        "tipo": "Poupança",
+                        "saldo": 260.0,
+                        "historico_saldos": [
+                            0.0,
+                            200.0,
+                            210.0,
+                            260.0
+                        ],
+                        "transacoes": [
+                            {
+                                "tipo": "DEPOSITO",
+                                "valor": 200.0,
+                                "data": "2026-11-24T22:44:48.547290"
+                            },
+                            {
+                                "tipo": "RENDIMENTO",
+                                "valor": 10.0,
+                                "data": "2026-11-24T22:44:48.935612"
+                            },
+                            {
+                                "tipo": "DEPOSITO",
+                                "valor": 50.0,
+                                "data": "2026-11-24T22:47:26.841943"
+                            }
+                        ],
+                        "ultimo_desconto": null,
+                        "ultimo_rendimento": "2026-11-24T22:44:48.935612",
+                        "taxaRendimento": 5.0
+                    }
+                ]
+            }
+        ]
+    }
+]

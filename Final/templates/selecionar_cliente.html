@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Patrimônio do Cliente</title>
+    {% if erro %}
+        <p>{{ erro }}</p>
+    {% endif %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Patrimônio do Cliente</h1>
+
+        <form method="POST">
+            <label>CPF do cliente:</label>
+            <input type="text" name="cpf" required>
+
+            <button type="submit">
+                Consultar Patrimônio
+            </button>
+        </form>
+
+        <br>
+        <a href="/">Voltar ao menu</a>
+    </div>
+</body>
+</html>

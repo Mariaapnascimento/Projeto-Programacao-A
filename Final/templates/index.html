@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Banco</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="cabecalho">
+            <h1> PROJETO BANCO</h1>
+            <p>Sistema de gerenciamento bancário</p>
+        </div>
+        <div class="card">
+            <div class="menu">
+                <a class="botao" href="/cadastrar-cliente">
+                    Cadastrar Cliente
+                </a>
+                <a class="botao" href="/cadastrar-conta">
+                    Cadastrar Conta
+                </a>
+                <a class="botao" href="/listar-contas">
+                    Listar Contas
+                </a>
+                <a class="botao" href="/procurar-conta">
+                    Procurar Conta
+                </a>
+                <a class="botao" href="/consultar-saldo">
+                    Consultar Saldo
+                </a>
+                <a class="botao" href="/depositar">
+                    Depositar
+                </a>
+                <a class="botao" href="/sacar">
+                    Sacar
+                </a>
+                <a class="botao" href="/transferir">
+                    Transferir
+                </a>
+                <a class="botao" href="/historico">
+                    Histórico de Transações
+                </a>
+                <a class="botao" href="/patrimonio">
+                    Patrimônio da Agência
+                </a>
+                <a class="botao" href="/historico-saldo">
+                    Histórico de Saldo
+                </a>
+                <a class="botao" href="/graficos">
+                    Visualizar Gráficos
+                </a>
+                <a class="botao" href="/selecionar-cliente">
+                    Patrimônio do Cliente
+                </a>
+                <a class="botao" href="/dados-json">
+                    Visualizar dados JSON
+                </a>
+                <a href="/exportar-json" class="botao">
+                    Exportar dados JSON
+                </a>
+                <a href="/importar-json" class="botao">
+                    Importar dados JSON
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
